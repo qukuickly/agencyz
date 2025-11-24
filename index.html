@@ -1,6 +1,34 @@
 <!DOCTYPE html>
 <html class="theme_dark">
 <head>
+  <!-- Meta Pixel (recommended high-quality copy) -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+
+  // Init your Pixel
+  fbq('init', '1979636696222485', {
+    em: null // optionally set hashed emails for advanced matching
+  });
+
+  // Standard page view
+  fbq('track', 'PageView');
+
+  // Optional: advanced automatic matching example (client-side only)
+  // If you have user's email/phone hashed with SHA256, pass it here:
+  // fbq('init', '1979636696222485', { em: 'HASHED_EMAIL_HERE' });
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none"
+       src="https://www.facebook.com/tr?id=1979636696222485&ev=PageView&noscript=1"/>
+</noscript>
+
   <meta charset="utf-8">
   <title>Telegram: Join Group Chat</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
